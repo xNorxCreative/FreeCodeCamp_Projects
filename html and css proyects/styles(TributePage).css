@@ -1,0 +1,62 @@
+:root {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightgrey;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    background-color: darkgray;
+    border: 2px solid black;
+    border-radius: 0.5%;
+}
+#title {
+    text-align: center;
+    background-color: slategrey;
+}
+#img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid black;
+}
+figure figcaption {
+    text-align: center;
+    font-style: italic;
+}
+#tribute-info {
+    padding: 0 5em;
+    margin: auto;
+}
+#tribute-info h3 {
+    text-align: center;
+}
+#tribute-info p {
+    text-align: justify;
+}
+footer {
+    margin-top: 2em;
+}
+footer p, a {
+    text-align: center;
+}
+footer a {
+    text-decoration-line: none;
+    color: white;
+}
+footer a:hover {
+    color: red;
+    text-decoration-line: underline;
+}
+#phrase {
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+}

@@ -1,0 +1,111 @@
+/*Estilos generales*/
+
+:root {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: url("https://wallpaperaccess.com/full/1083502.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+::selection {
+    background-color: brown;
+}
+::-webkit-scrollbar {
+    width: initial;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(182, 80, 21, 0.534);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: brown;
+    cursor: pointer;
+}
+::-webkit-scrollbar-track {
+    background: rgb(70, 30, 12);
+}
+body {
+    display: grid;
+    grid-template-areas: "header""form";
+    justify-items: center;
+    backdrop-filter: blur(10px);
+    height: 100%;
+    padding: 100% auto;
+    padding-bottom: 100px;
+}
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 30px;
+}
+#survey-form {
+    grid-area: form;
+    width: 40%;
+    margin: 2em;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: rgba(255, 255, 255, 0.4);
+    place-content: center;
+    align-items: center;
+}
+
+/*------------------------*/
+
+#survey-form section {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+    width: 100%;
+}
+#survey-form section * {
+    width: 70%;
+    text-align: left;
+    font-weight: bolder;
+    color: black;
+}
+#survey-form section input, #survey-form section select, #survey-form section textarea {
+    height: 28px;
+    background-color: rgba(182, 80, 21, 0.534);
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in;
+}
+#survey-form section input::-webkit-input-placeholder, #dropdown option {
+    color: brown;
+}
+#survey-form section input[required]:focus, select:focus {
+    border-color: brown;
+    box-shadow: 3px 3px 3px brown;
+}
+#survey-form section select {
+    height: 32px;
+    width: 71.2%;
+}
+#survey-form section textarea {
+    height: 100px;
+    resize: none;
+}
+#radial-bottons, #ckeckbox-bottons {
+    place-content: flex-start;
+    text-align: left;
+}
+#radial-bottons input[type="radio"], #ckeckbox-bottons input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    accent-color: brown;
+    border: 1px solid red;
+    border-radius: 50px;
+}
+#survey-form input[type="submit"] {
+    width: 70%;
+    height: 35px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: rgb(70, 30, 12);
+    transition: background-color 0.1s linear;
+}
+#survey-form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: brown;
+}
